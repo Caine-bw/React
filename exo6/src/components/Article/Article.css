@@ -1,0 +1,17 @@
+.article{
+    display: flex;
+    justify-content: space-between;
+    margin: 118px 0;
+}
+
+.article2{
+    width: 33%;
+}
+
+.titre{
+    color: rgb(136, 194, 136);
+}
+
+.text{
+    color: white;
+}

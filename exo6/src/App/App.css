@@ -1,0 +1,7 @@
+.App{
+  background-color: #383838;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+
