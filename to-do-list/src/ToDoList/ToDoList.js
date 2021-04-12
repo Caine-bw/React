@@ -37,8 +37,14 @@ class ToDoList extends Component {
     renderAjoutItem(){
         return this.state.objets.map((objets)=>{
             return (
+                
                 <div key={objets}>
-                    {objets} <button className="btn bg-danger mx-1" onClick={this.deleteToDo.bind(this)}><span className="p-auto">x</span></button>
+                    {objets} <button 
+                                className="btn bg-danger mx-1  mt-2" onClick={this.deleteToDo.bind(this)}>
+                                <span 
+                                    className="p-auto"> x
+                                </span>
+                             </button>
                 </div>
             );
         });
@@ -56,7 +62,7 @@ class ToDoList extends Component {
                         onChange={this.onChange.bind(this)}
                         className="form-control mr-2 mb-2 w-50 "
                         />
-                <button className="btn bg-success" onClick={this.addToDo.bind(this)}>ajouter</button>
+                <button className="btn bg-success text-white" onClick={this.addToDo.bind(this)}>ajouter</button>
                 </form>
                 <div>
                     {this.renderAjoutItem()}
